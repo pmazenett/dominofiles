@@ -91,4 +91,4 @@
 
 # export SPARK_SUBMIT_OPTIONS="--executor-cores 8 --driver-memory 16g --executor-memory 16g"
 
-export ZEPPELIN_JAVA_OPTS="-Dspark.executor.memory=16g -Dspark.driver.memory=16g -Dspark.executor.cores=8"
+export ZEPPELIN_JAVA_OPTS="-Dspark.executor.memory=16g"
