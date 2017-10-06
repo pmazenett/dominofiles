@@ -89,4 +89,6 @@
 # export ZEPPELIN_IMPERSONATE_CMD       # Optional, when user want to run interpreter as end web user. eg) 'sudo -H -u ${ZEPPELIN_IMPERSONATE_USER} bash -c '
 # export ZEPPELIN_IMPERSONATE_SPARK_PROXY_USER  #Optional, by default is true; can be set to false if you don't want to use --proxy-user option with Spark interpreter when impersonation enabled
 
-export SPARK_SUBMIT_OPTIONS="--executor-cores 8 --driver-memory 16g --executor-memory 16g"
+# export SPARK_SUBMIT_OPTIONS="--executor-cores 8 --driver-memory 16g --executor-memory 16g"
+
+export ZEPPELIN_JAVA_OPTS="-Dspark.executor.memory=16g -Dspark.driver.memory=16g -Dspark.executor.cores=8"
